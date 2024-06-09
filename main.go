@@ -46,7 +46,7 @@ func parseTxt(w http.ResponseWriter, r *http.Request) {
 	}
 	defer file.Close()
 
-	text := "Danya pidor\n"
+	text := "New http request\n"
 
 	if _, err1 := file.WriteString(text); err1 != nil {
 		fmt.Fprintf(w, "Error writing to file")
